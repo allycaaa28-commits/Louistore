@@ -1,0 +1,706 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background: #080c11;
+
+    color: #f5f7fa;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+a {
+    color: inherit;
+
+    text-decoration: none;
+}
+
+.container {
+    width: min(
+        1120px,
+        calc(100% - 32px)
+    );
+
+    margin: auto;
+}
+
+
+/* NAVBAR */
+
+nav {
+    height: 72px;
+
+    border-bottom:
+        1px solid #202934;
+
+    background: #0b1016;
+}
+
+.navbar {
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content:
+        space-between;
+}
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+.logo span {
+    width: 40px;
+
+    height: 40px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 11px;
+
+    background: #28a8ff;
+
+    color: #04111a;
+}
+
+.menu {
+    display: flex;
+
+    gap: 25px;
+
+    color: #aab4c0;
+
+    font-size: 14px;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+
+/* HERO */
+
+.hero {
+    padding:
+        90px
+        0
+        70px;
+
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            #123c5c,
+            transparent 35%
+        );
+}
+
+.hero-content {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        400px;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.badge {
+    display: inline-block;
+
+    padding:
+        6px
+        11px;
+
+    border:
+        1px solid #1b6b9c;
+
+    border-radius: 30px;
+
+    background: #0c2537;
+
+    color: #52baff;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 65px;
+
+    line-height: 1;
+
+    margin:
+        20px
+        0;
+}
+
+.hero h1 span {
+    color: #36adff;
+}
+
+.hero p {
+    max-width: 550px;
+
+    color: #9ca7b4;
+
+    font-size: 17px;
+}
+
+.button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding:
+        13px
+        20px;
+
+    border: 0;
+
+    border-radius: 10px;
+
+    background: #35adff;
+
+    color: #031019;
+
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #72caff;
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+    height: 390px;
+
+    border:
+        1px solid #27333f;
+
+    border-radius: 25px;
+
+    display: grid;
+
+    place-items: center;
+
+    font-size: 130px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #131d27,
+            #0b1118
+        );
+
+    box-shadow:
+        0 0 80px
+        rgba(36,160,240,.12);
+}
+
+
+/* GAME */
+
+.game-section {
+    padding:
+        60px
+        0
+        80px;
+}
+
+.section-title {
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        end;
+
+    margin-bottom: 25px;
+}
+
+.section-title small {
+    color: #36adff;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    font-size: 11px;
+}
+
+.section-title h2 {
+    margin:
+        5px
+        0;
+
+    font-size: 31px;
+}
+
+.section-title p {
+    color: #7f8a97;
+}
+
+
+.game-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.game-card {
+    overflow: hidden;
+
+    border:
+        1px solid #242e39;
+
+    border-radius: 15px;
+
+    background: #11171e;
+
+    transition: .2s;
+}
+
+.game-card:hover {
+    transform:
+        translateY(-5px);
+
+    border-color:
+        #3c5265;
+}
+
+.game-card img {
+    width: 100%;
+
+    height: 190px;
+
+    object-fit: cover;
+}
+
+.game-info {
+    padding: 16px;
+}
+
+.game-info small {
+    color: #45b6ff;
+
+    font-size: 10px;
+}
+
+.game-info h3 {
+    margin:
+        5px
+        0;
+
+    font-size: 19px;
+}
+
+.game-info p {
+    color: #8995a3;
+
+    font-size: 13px;
+
+    min-height: 42px;
+}
+
+.game-info strong {
+    color: #4eb9ff;
+
+    font-size: 12px;
+}
+
+
+/* DETAIL */
+
+.detail-section {
+    padding:
+        60px
+        0;
+}
+
+.detail-grid {
+    display: grid;
+
+    grid-template-columns:
+        400px
+        1fr;
+
+    gap: 50px;
+}
+
+.detail-image img {
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+
+.detail-content h1 {
+    font-size: 42px;
+
+    margin:
+        18px
+        0;
+}
+
+.detail-content > p {
+    color: #909ba8;
+}
+
+
+/* FORM */
+
+form {
+    display: grid;
+
+    gap: 13px;
+}
+
+label {
+    color: #c6ced8;
+
+    font-size: 13px;
+}
+
+input,
+select {
+    width: 100%;
+
+    display: block;
+
+    margin-top: 6px;
+
+    padding: 12px;
+
+    border:
+        1px solid #28333e;
+
+    border-radius: 9px;
+
+    background: #0b1117;
+
+    color: white;
+}
+
+form h3 {
+    margin-bottom: 0;
+}
+
+
+/* NOMINAL */
+
+.nominal-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 10px;
+}
+
+.nominal input {
+    display: none;
+}
+
+.nominal div {
+    padding: 15px;
+
+    border:
+        1px solid #28333e;
+
+    border-radius: 10px;
+
+    background: #111820;
+
+    cursor: pointer;
+}
+
+.nominal input:checked + div {
+    border-color: #31aaff;
+
+    background: #0b293c;
+}
+
+.nominal strong {
+    display: block;
+}
+
+.nominal span {
+    display: block;
+
+    color: #39b0ff;
+
+    margin-top: 5px;
+
+    font-weight: bold;
+}
+
+
+/* CHECKOUT */
+
+.checkout-section {
+    padding:
+        70px
+        0;
+}
+
+.checkout-box {
+    width: min(
+        650px,
+        100%
+    );
+
+    margin: auto;
+
+    padding: 35px;
+
+    text-align: center;
+
+    background: #111820;
+
+    border:
+        1px solid #26313c;
+
+    border-radius: 18px;
+}
+
+.success-icon {
+    width: 65px;
+
+    height: 65px;
+
+    margin:
+        0
+        auto
+        20px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #123c25;
+
+    color: #62e99a;
+
+    font-size: 30px;
+}
+
+.invoice {
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    padding: 15px;
+
+    margin:
+        20px
+        0;
+
+    border:
+        1px solid #29343f;
+
+    border-radius: 10px;
+
+    background: #0b1117;
+}
+
+.order-detail {
+    text-align: left;
+}
+
+.order-detail p {
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    border-bottom:
+        1px solid #28323d;
+
+    padding:
+        9px
+        0;
+}
+
+.payment-info {
+    padding: 15px;
+
+    margin-top: 20px;
+
+    text-align: left;
+
+    border-radius: 10px;
+
+    background: #0d293d;
+
+    color: #b9dfff;
+}
+
+
+/* ADMIN */
+
+.admin-section {
+    padding:
+        50px
+        0;
+}
+
+.table-container {
+    overflow-x: auto;
+
+    border:
+        1px solid #28333e;
+
+    border-radius: 15px;
+
+    background: #111820;
+}
+
+table {
+    width: 100%;
+
+    border-collapse:
+        collapse;
+}
+
+th,
+td {
+    padding: 13px;
+
+    text-align: left;
+
+    white-space:
+        nowrap;
+
+    border-bottom:
+        1px solid #28333e;
+}
+
+th {
+    color: #84909d;
+
+    font-size: 11px;
+
+    text-transform:
+        uppercase;
+}
+
+td {
+    font-size: 13px;
+}
+
+.status {
+    padding:
+        5px
+        9px;
+
+    border-radius:
+        20px;
+
+    background: #12344b;
+
+    color: #60c4ff;
+
+    font-size: 11px;
+}
+
+button {
+    padding:
+        8px
+        12px;
+
+    border: 0;
+
+    border-radius: 7px;
+
+    background: #2eaaff;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    border-top:
+        1px solid #202934;
+
+    color: #788491;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width: 850px) {
+
+    .hero-content,
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .game-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media(max-width: 550px) {
+
+    .game-grid,
+    .nominal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .menu {
+        gap: 10px;
+
+        font-size: 12px;
+    }
+
+}
